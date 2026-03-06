@@ -59,8 +59,9 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sora: ["Sora", "Arial", "sans-serif"],
-        manrope: ["Manrope", "Arial", "sans-serif"],
+        sora: ["var(--font-sora)", "Arial", "sans-serif"],
+        manrope: ["var(--font-manrope)", "Arial", "sans-serif"],
+        body: ["var(--font-manrope)", "Arial", "sans-serif"],
       },
     },
   },
