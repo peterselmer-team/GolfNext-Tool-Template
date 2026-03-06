@@ -26,7 +26,9 @@ export default function RootLayout({
 }>): React.ReactElement {
   return (
     <html lang="en" className={`${sora.variable} ${manrope.variable}`}>
-      <body className="min-h-screen font-body antialiased">{children}</body>
+      <body className="min-h-screen font-body antialiased" suppressHydrationWarning>
+        {children}
+      </body>
     </html>
   );
 }
